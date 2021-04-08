@@ -22,7 +22,280 @@ a{
 }
 
 body{
+    width: 100%;
     color:#555;
     margin:0;
     line-height:1.6;
+}
+
+/* 共通のスタイル */
+.inner{
+    width: 1100px;
+    padding: 90px 0;
+    margin: 0 auto;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+}
+ 
+.bold{
+    font-weight: bold;
+}
+
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-logo{
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-nav ul{
+    display: flex;
+    padding: 22px 0;
+}
+
+.header-nav li{
+    margin-left: 55px;
+    font-size: 15px;
+}
+
+/* main */
+
+/* 共通 */
+.btn{
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px black;
+    color: white;
+    background:linear-gradient(-90deg, #283C86, #1A719A, #06BEB6);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* first-v */
+#first-v{
+    height: 770px;
+    background-image: url(/img/bg1.png);
+    background-size: cover;
+    position: relative;
+}
+
+.first-v_wrap{
+    width: 250px;
+    padding: 285px 0 255px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-v_title{
+    margin-bottom: 150px;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.first-v_title::after{
+    display: block;
+    content: "";
+    width: 100px;
+    margin:20px auto 0;
+    border-top:1px white solid;
+}
+
+.first-v_btn{
+    width: 200px;
+}
+
+.fas{
+    margin-right: 4px;
+}
+
+/* about */
+#about{
+    background-color: #F8F8F8;
+}
+
+.title::before{
+    display: inline-block;
+    content: "";
+    width: 30px;
+    margin-right: 20px;
+    border-top: 1px black solid;
+}
+
+.title::after{
+    display: inline-block;
+    content: "";
+    width: 30px;
+    margin-left: 20px;
+    border-top: 1px black solid;
+}
+
+
+.about-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-item{
+    width: 300px;
+    height: 315px;
+    padding: 35px 50px 29px;
+    text-align: center;
+    background-color: white;
+}
+
+.about-item:nth-child(n+4):nth-child(-n+6){
+    margin-top: 47px;
+}
+
+.about-title{
+    font-size: 22px;
+}
+
+.about-img img{
+    width: 122px;
+    height: 122px;
+    margin: 20px auto 25px;
+}
+
+.about-intro{
+    text-align: left;
+    font-size: 13px;
+}
+
+
+/* news */
+#news{
+    width: 100%;
+    background-image: url(/img/bg2.png);
+    background-size: cover;
+}
+
+.white-title{
+    width: 150px;
+    margin: 0 auto;
+    color: white;
+}
+
+.white-title::before{
+    display: inline-block;
+    content: "";
+    width: 30px;
+    margin-right: 20px;
+    border-top: 1px white solid;
+}
+
+.white-title::after{
+    display: inline-block;
+    content: "";
+    width: 30px;
+    margin-left: 20px;
+    border-top: 1px white solid;
+}
+
+.news-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-item{
+    width: 336px;
+    background-color: white;
+}
+
+.news-img{
+    width: 100%;
+    height: 207px;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.news-text{
+    padding: 20px ;
+}
+
+.news-day{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.news-title{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news-intro{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* entry */
+#entry{
+    height: 477px;
+    background-color: white;
+}
+
+.entry_wrap{
+    width: 400px;
+    padding: 175px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.entry_title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+}
+
+.entry_btn{
+    width: 320px;
+    margin-top: 55px;
+}
+
+/* contact */
+#contact{
+    color: white;
+    background-image: url(/img/bg3.png);
+    background-size: cover;
+
+}
+
+/* footer */
+footer{
+    height: 50px;
+    background-color: #191919;
+}
+
+.footer-logo{
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
 }
