@@ -22,7 +22,7 @@ a{
 }
 
 body{
-    min-width: 1117px;
+    /* min-width: 1117px; */
     color:#555;
     margin:0;
     line-height:1.6;
@@ -37,11 +37,11 @@ body{
 
 .title{
     display: flex;
-    justify-content: center;
+    width: 200px;
     align-items: center;
-    padding-bottom: 60px;
-    font-style: italic;
     font-size: 18px;
+    font-style: italic;
+    margin: 0 auto;
     text-align: center;
 }
  
@@ -56,6 +56,7 @@ header{
     justify-content: space-between;
     padding: 0 20px;
     color: white;
+    background-color: inherit;
     position: absolute;
     z-index: 10;
 }
@@ -71,7 +72,7 @@ header{
     padding: 22px 0;
 }
 
-.header-nav li{
+.header-nav ul li{
     margin-left: 55px;
     font-size: 15px;
 }
@@ -81,57 +82,46 @@ header{
 /* 共通 */
 .btn{
     height: 50px;
+    text-align: center;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 5px black;
-    color: white;
     background:linear-gradient(-90deg, #283C86, #1A719A, #06BEB6);
+    box-shadow: 0 5px #070707;
     font-size: 15px;
-    font-weight: bold;
-    text-align: center;
+    color: white;
 }
 
-.contact-text{
-    font-size: 15px;
-    margin-top: 33px;
-}
 
-.contact-caution{
-    margin-bottom: 25px;
-}
-
-.red{
-    color: red;
-}
 
 /* first-v */
 #first-v{
     height: 770px;
     background-image: url(/img/bg1.png);
     background-size: cover;
+    color: white;
     position: relative;
 }
 
 .first-v_wrap{
-    width: 250px;
     padding: 285px 0 255px;
     margin: 0 auto;
+    width: 250px;
     text-align: center;
 }
 
 .first-v_title{
     margin-bottom: 150px;
-    font-size: 27px;
     font-weight: bold;
-    color: white;
+    font-size: 27px;
 }
 
 .first-v_title::after{
     display: block;
     content: "";
     width: 100px;
-    margin:20px auto 0;
     border-top:1px white solid;
+    margin:20px auto 0;
 }
 
 .first-v_btn{
@@ -148,7 +138,6 @@ header{
 }
 
 .title::before{
-    display: inline-block;
     content: "";
     width: 30px;
     margin-right: 20px;
@@ -156,7 +145,6 @@ header{
 }
 
 .title::after{
-    display: inline-block;
     content: "";
     width: 30px;
     margin-left: 20px;
@@ -165,17 +153,23 @@ header{
 
 
 .about-items{
+    margin-top: 60px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;justify-content: space-between;
+    
 }
 
 .about-item{
-    width: 300px;
-    height: 315px;
-    padding: 35px 50px 29px;
-    text-align: center;
     background-color: white;
+    width: 300px;
+    height: 312px;
+    padding: 35px 50px 50px;
+    text-align: center;
+    /* margin-right: 100px; */
+}
+
+.about-item:nth-child(3):nth-child(6){
+    /* margin-right: 0; */
 }
 
 .about-item:nth-child(n+4):nth-child(-n+6){
@@ -186,45 +180,25 @@ header{
     font-size: 22px;
 }
 
-.about-img img{
+.about-img{
+    margin: 20px auto 25px;
     width: 122px;
     height: 122px;
-    margin: 20px auto 25px;
+}
+
+.about-img img{
+    width: 100%;
 }
 
 .about-intro{
-    text-align: left;
     font-size: 13px;
 }
 
 
 /* news */
 #news{
-    width: 100%;
     background-image: url(/img/bg2.png);
     background-size: cover;
-}
-
-.white-title{
-    width: 150px;
-    margin: 0 auto;
-    color: white;
-}
-
-.white-title::before{
-    display: inline-block;
-    content: "";
-    width: 30px;
-    margin-right: 20px;
-    border-top: 1px white solid;
-}
-
-.white-title::after{
-    display: inline-block;
-    content: "";
-    width: 30px;
-    margin-left: 20px;
-    border-top: 1px white solid;
 }
 
 .news-items{
@@ -232,9 +206,29 @@ header{
     justify-content: space-between;
 }
 
+.white-title{
+    color: white;
+    width: 150px;
+}
+
+.white-title::before{
+    content: "";
+    width: 30px;
+    margin-right: 20px;
+    border-top: 1px white solid;
+}
+
+.white-title::after{
+    content: "";
+    width: 30px;
+    margin-left: 20px;
+    border-top: 1px white solid;
+}
+
+
 .news-item{
     width: 336px;
-    background-color: white;
+    margin-top: 60px;
 }
 
 .news-img{
@@ -249,6 +243,7 @@ header{
 
 .news-text{
     padding: 20px ;
+    background-color: white;
 }
 
 .news-day{
@@ -257,46 +252,40 @@ header{
 }
 
 .news-title{
-    margin-top: 8px;
+    margin: 8px 0 20px;
     font-size: 14px;
     font-weight: bold;
 }
 
 .news-intro{
-    margin-top: 20px;
     font-size: 12px;
 }
 
 /* entry */
-#entry{
-    height: 477px;
-    background-color: white;
-}
-
 .entry_wrap{
-    width: 400px;
     padding: 175px 0;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }
 
 .entry_title{
-    font-size: 18px;
+    margin-bottom: 55px;
     font-weight: bold;
+    font-size: 18px;
     color: #191919;
 }
 
 .entry_btn{
     width: 320px;
-    margin-top: 55px;
 }
 
 /* contact */
 
 #contact{
-    color: white;
     background-image: url(/img/bg3.png);
     background-size: cover;
+    color: white;
 }
 
 .contact-wrap{
@@ -304,12 +293,13 @@ header{
     margin: 0 auto;
 }
 
-.contact-caution{
-    font: 15px;
+input, textarea, select{
+    width: 100%;
+    border-radius: 7px;
+    padding: 15px;
 }
 
 .wipe{
-    width: 600px;
     height: 55px;
 }
 
@@ -317,19 +307,69 @@ header{
     height: 185px;
 }
 
+select{
+    appearance: none;
+}
+
+.contact-box:nth-of-type(3){
+    position: relative;
+}
+
+.contact-box:nth-of-type(3)::after{
+    position: absolute;
+    background-image: url("/img/arrow.png");
+    background-size: 100%;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 55px;
+    right: 20px;
+}
+
+.contact-caution{
+    margin:60px 0 25px;
+    font-size: 15px;
+}
+
+.contact-box{
+    margin-bottom: 33px;
+}
+
+.contact-box:nth-of-type(4){
+    margin-bottom: 0;
+}
+
+.contact-text{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+.red{
+    color: red;
+    margin-left: 8px;
+}
+
+.caution-red{
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+
 
 
 
 /* footer */
 footer{
-    height: 50px;
     background-color: #191919;
+    height: 50px;
 }
 
 .footer-logo{
-    line-height: 50px;
     text-align: center;
-    font-size: 12px;
+    line-height: 50px;
     font-weight: bold;
+    font-size: 12px;
     color: white;
 }
