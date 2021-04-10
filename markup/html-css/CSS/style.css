@@ -49,6 +49,8 @@ body{
     font-weight: bold;
 }
 
+
+
 /* header */
 header{
     width: 100%;
@@ -168,9 +170,9 @@ header{
     /* margin-right: 100px; */
 }
 
-.about-item:nth-child(3):nth-child(6){
-    /* margin-right: 0; */
-}
+/* .about-item:nth-child(3):nth-child(6){
+    margin-right: 0;
+} */
 
 .about-item:nth-child(n+4):nth-child(-n+6){
     margin-top: 47px;
