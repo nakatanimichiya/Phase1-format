@@ -34,6 +34,8 @@
 }
 
 .first-v_wrap{
+    display: flex;
+    justify-content: space-between;
     .first-v_title{
         display: inline-block;
         margin: 296px 0 290px;

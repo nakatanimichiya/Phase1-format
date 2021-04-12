@@ -1,0 +1,41 @@
+#reserve{
+    height: 342px;
+    padding-top: 164px;
+    background-color: white;
+}
+
+.reserve-wrap{
+    width: 1068px;
+    margin: 0 auto;
+    padding-top: 83px;
+    border-top: 1px #70707036 solid;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        display: flex;
+        p{
+            width: 258px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 3.2rem;
+            text-align: center;
+            color: #7070704D;
+        }
+        .icon{
+            height: 32px;
+            line-height: 32px;
+            .fab{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    button{
+        width: 184px;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        color: #707070;
+        background-color: white;
+        border: 1px #707070 solid;
+    }
+}
