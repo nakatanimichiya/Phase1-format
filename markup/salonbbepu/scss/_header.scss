@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    align-items: center;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    .header-logo{
+        margin: 68px 20px 0 77px;
+        font-size: 3.8rem;
+    }
+}
+
+.header-list{
+    width: 390px;
+    margin-top: 68px;
+    font-size: 1.8rem;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            height: 1.8rem;
+            line-height: 1.8rem;
+            &:nth-child(1){
+                border-bottom: 1px black solid;
+            }
+            &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                color: #707070;
+            }
+        }
+    }
+
+}
+
+
+
