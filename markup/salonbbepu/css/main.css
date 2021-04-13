@@ -306,7 +306,7 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 }
 
 .gray .title {
-  width: 1282px;
+  width: 100%;
   height: 24px;
   margin: 0 auto;
   padding: 256px 0 127px 67px;
@@ -322,7 +322,8 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 
 @media (max-width: 599px) {
   .gray .title {
-    padding: 127px 0 0;
+    width: 90%;
+    padding: 120px 0 0;
   }
 }
 
@@ -345,18 +346,14 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 
 @media (max-width: 599px) {
   .concept-img {
-    width: 60%;
+    width: 100%;
     height: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -368,11 +365,8 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 
 @media (max-width: 599px) {
   .concept-img .big {
-    width: 100%;
+    width: 60%;
     height: 40%;
-    position: absolute;
-    left: 30%;
-    top: opx;
   }
 }
 
@@ -384,13 +378,14 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 
 @media (max-width: 599px) {
   .concept-img .small {
-    width: 100%;
+    width: 30%;
     height: 40%;
   }
 }
 
 @media (max-width: 599px) {
   img {
+    background-size: cover;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -402,7 +397,7 @@ nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4) {
 }
 
 .brown .intro {
-  width: 1282px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
