@@ -1,52 +1,52 @@
-#menu{
-    height: 950px;
-}
+// #menu{
+//     height: 950px;
+// }
 
 
 
-.title{
-        width: 1282px;
-        height: 24px;
-        padding: 256px 0 15px 107px; 
-        display: flex;
-        align-items: center;
-        font-size: 1.8rem;
-        color: #707070;
-        &::after{
-            display: inline-block;
-            content: "";
-            width: 99px;
-            margin-left: 22px;
-            border-top: 1px #707070 solid;
-        }
-    }
+// .title{
+//         width: 1282px;
+//         height: 24px;
+//         padding: 256px 0 15px 107px; 
+//         display: flex;
+//         align-items: center;
+//         font-size: 1.8rem;
+//         color: #707070;
+//         &::after{
+//             display: inline-block;
+//             content: "";
+//             width: 99px;
+//             margin-left: 22px;
+//             border-top: 1px #707070 solid;
+//         }
+//     }
 
-.menu-items{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 107px;
-    .menu-item{
-        width: 274px;
-        height: 555px;
-        img{
-            width: 274px;
-            height: 271px;
-            background-size: cover;
-        }
-        &_course{
-            margin: 37px 0;
-            text-align: center;
-            font-size: 3rem;
-        }
-        &_intro{
-            height: 131px;
-            margin: 0 10px 34px 11px;
-            font-size: 1.6rem;
-        }
-        &_count{
-            text-align: right;
-            margin-right: 10px;
-            font-size: 1.6rem;
-        }
-    }
-}
+// .menu-items{
+//     display: flex;
+//     justify-content: space-between;
+//     margin: 0 107px;
+//     .menu-item{
+//         width: 274px;
+//         height: 555px;
+//         img{
+//             width: 274px;
+//             height: 271px;
+//             background-size: cover;
+//         }
+//         &_course{
+//             margin: 37px 0;
+//             text-align: center;
+//             font-size: 3rem;
+//         }
+//         &_intro{
+//             height: 131px;
+//             margin: 0 10px 34px 11px;
+//             font-size: 1.6rem;
+//         }
+//         &_count{
+//             text-align: right;
+//             margin-right: 10px;
+//             font-size: 1.6rem;
+//         }
+//     }
+// }

@@ -1,10 +1,13 @@
 .concept-wrap{
+    width: 100%;
+    height: 967px;
     position: relative;
 }
 
 
 .gray{
-    height: 400px;
+    width: 100%;
+    height: 407px;
     background-color: #A193861F;
     .title{
         width: 1282px;
@@ -15,6 +18,9 @@
         align-items: center;
         font-size: 18px;
         color: #707070;
+        @include sp{
+            padding: 127px 0 0; 
+        }
         &::after{
             display: inline-block;
             content: "";
@@ -32,13 +38,39 @@
     position: absolute;
     bottom: 1%;
     z-index: 10;
-    img{
+    @include sp{
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .big{
         width: 740px;
         height: 400px;
         background-size: cover;
+        @include sp{
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            left: 30%;
+            top: opx;
         }
+    }
     .small{
-            width: 400px;
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        @include sp{
+            width: 100%;
+            height: 40%;
+        }
+    }
+}
+
+@include sp{
+    img{
+        object-fit: cover;
     }
 }
 

@@ -1,59 +1,66 @@
-// #first-v{
-//     height: 800px;
-//     position: relative;
-//     background-color: white;
-// }
-
-// .bgc{
-//     display: flex;   
-//     .first-v_wrap{
-//         margin: 296px 97px 290px 107px;
-//         font-size: 3.8rem;
-//     }
-//     .first-v_ja{
-//      margin-bottom: 48px;
-//     }
-//     &_img{
-//         width: 53%;
-//         position: absolute;
-//         left: 50%;
-//         z-index: 9;
-//         img{
-//             height: 100%;
-//         }
-//     }
-
-// }
-
-
-
 #first-v{
-    height: 800px;
-    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
 
-.first-v_wrap{
+.first-wrap{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    .first-v_title{
-        display: inline-block;
-        margin: 296px 0 290px;
-        .title-ja{
-            height: 38px;
-            margin-bottom: 48px;
-            margin-left: 163px;
-            font-size: 3.8rem;
-            font-family: serif;
+    .first-left{
+        width: 38%;
+        background-color: white;
+        .first-left_title{
+            width: 100%;
+            margin: 296px auto 290px;
+            text-align: center;
+            display: inline-block;
+            @include sp{
+                margin-top: 210px;
+            }
+            .title-ja{
+                height: 38px;
+                line-height: 38px;
+                margin-bottom: 48px;
+                // margin-left: 163px;
+                font-size: 3.8rem;
+                font-family: serif;
+                @include sp{
+                    width: 90%;
+                    height: 19px;
+                    line-height: 19px;
+                    margin:0 auto 24px;
+                    font-size: 1.9rem; 
+                }
+            }
+            .title-eg{
+                width: 90%;
+                height: 128px;
+                line-height: 128px;
+                // margin-left: 107px;
+                font-size: 6rem;
+                font-family: monospace;
+                @include sp{
+                    height: 64px;
+                    line-height: 64px;
+                    margin: 0 auto;
+                    font-size: 3rem;
+                }
+            }
         }
-        .title-eg{
-            width: 390px;
-            height: 128px;
-            line-height: 128px;
-            margin-left: 107px;
-            font-size: 6rem;
-            font-family: monospace;
+    }
+    .first-right{
+        width: 62%;
+        img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            object-fit: cover;
         }
     }
 }
+
+
 
