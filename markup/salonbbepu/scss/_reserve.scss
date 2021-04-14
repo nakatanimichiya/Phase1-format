@@ -1,41 +1,73 @@
-// #reserve{
-//     height: 342px;
-//     padding-top: 164px;
-//     background-color: white;
-// }
+#reserve{
+    height: 342px;
+    padding-top: 164px;
+    background-color: white;
+    @include tab{
+        width: 100%;
+    }
+    @include sp{
+        height: 260px;
+        padding-top: 50px;
+    }
+}
 
-// .reserve-wrap{
-//     width: 1068px;
-//     margin: 0 auto;
-//     padding-top: 83px;
-//     border-top: 1px #70707036 solid;
-//     display: flex;
-//     justify-content: space-between;
-//     .left{
-//         display: flex;
-//         p{
-//             width: 258px;
-//             height: 32px;
-//             line-height: 32px;
-//             font-size: 3.2rem;
-//             text-align: center;
-//             color: #7070704D;
-//         }
-//         .icon{
-//             height: 32px;
-//             line-height: 32px;
-//             .fab{
-//                 font-size: 1.6rem;
-//             }
-//         }
-//     }
-//     button{
-//         width: 184px;
-//         height: 37px;
-//         line-height: 37px;
-//         text-align: center;
-//         color: #707070;
-//         background-color: white;
-//         border: 1px #707070 solid;
-//     }
-// }
+.reserve-wrap{
+    width: 79%;
+    margin: 0 auto;
+    padding-top: 83px;
+    border-top: 1px #70707036 solid;
+    display: flex;
+    justify-content: space-between;
+    @include tab{
+        width: 95%;
+        margin: 0 auto;
+    }
+    @include sp{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 95%;
+        height: 210px;
+        margin: 0 auto;
+        padding-top: 42px;
+    }
+    .left{
+        display: flex;
+        
+        @include sp{
+            justify-content: space-between;
+            width: 100%;
+        }
+        p{
+            width: 258px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 3.2rem;
+            text-align: center;
+            color: #7070704D;
+            @include sp{
+                text-align: left;
+                font-size: 1.8rem;
+            }
+        }
+        .icon{
+            height: 32px;
+            line-height: 32px;
+            .fab{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    button{
+        width: 184px;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        color: #707070;
+        background-color: white;
+        border: 1px #707070 solid;
+        @include sp{
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -10,49 +10,73 @@
     display: flex;
     justify-content: space-between;
     .first-left{
-        width: 38%;
+        width: 41%;
         background-color: white;
+        @include tab{
+            display: none;
+        }
         .first-left_title{
             width: 100%;
             margin: 296px auto 290px;
             text-align: center;
             display: inline-block;
-            @include sp{
-                margin-top: 210px;
-            }
             .title-ja{
+                width: 100%;
                 height: 38px;
                 line-height: 38px;
                 margin-bottom: 48px;
-                // margin-left: 163px;
                 font-size: 3.8rem;
                 font-family: serif;
-                @include sp{
-                    width: 90%;
-                    height: 19px;
-                    line-height: 19px;
-                    margin:0 auto 24px;
-                    font-size: 1.9rem; 
-                }
             }
             .title-eg{
-                width: 90%;
+                width: 100%;
                 height: 128px;
                 line-height: 128px;
-                // margin-left: 107px;
-                font-size: 6rem;
+                font-size: 5.5rem;
                 font-family: monospace;
-                @include sp{
-                    height: 64px;
-                    line-height: 64px;
-                    margin: 0 auto;
-                    font-size: 3rem;
-                }
             }
         }
     }
     .first-right{
-        width: 62%;
+        @include tab{
+            width: 100%;
+        }
+        &_title{
+            display: none;
+            @include tab{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                height: 118px;
+                color: white;
+                position: absolute;
+                left: 50%;
+                bottom: 50%;
+                z-index: 10;
+                transform: translate(-50%, -30%);
+                .title-eg{
+                    width: 100%;
+                    height: 95px;
+                    line-height: 95px;
+                    font-size: 3.8rem;
+                    text-align: center;
+                    @include sp{
+                        font-size: 2.8rem;
+                    }
+                }
+                .title-ja{
+                    width: 100%;
+                    height: 23px;
+                    line-height: 23px;
+                    font-size: 3.0rem;
+                    text-align: center;
+                    @include sp{
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
         img{
             width: 100%;
             height: 100%;
