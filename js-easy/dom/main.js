@@ -49,3 +49,43 @@ const items = document.querySelectorAll(".list li")
 items.forEach((item) => {
     console.log(item.textContent)
 })
+
+
+//要素の情報を取得する、操作する
+const elem = document.querySelector(".list")
+
+console.log(elem.textContent) //アイテム1…
+console.log(elem.innerHTML) // <li>アイテム</li>...
+for (let i = 0; i < elem.children.length; i++) {
+    console.log(elem.children[i]) //<li>アイテム１</li>...
+}
+console.log(elem.firstElementChild) //<li>アイテム1</li>...
+console.log(elem.lastElementChild) //<li>アイテム1</li>...
+console.log(elem.parentElement) //<body></body>
+
+const elem2 = document.querySelector("img")
+
+// console.log(elem2.getAttribute("img"))
+// elem2.setAttribute("src", "https//placehold.it/400x200") //表示される画像
+
+//子要素を追加・削除する
+const newItem = document.createElement("li")
+newItem.textContent = "新しいアイテム"
+
+list.appendChild(newItem) //リストの最後に「新しいアイテム」が追加される
+
+list.removeChild(list.firstElementChild) //リストの最初の「アイテム1」を削除する
+
+//イベント
+const addButton = document.getElementById("add")
+const removeButton = document.getElementById("remove")
+
+addButton.addEventListener("click", (event) => {
+    const newItem = document.createElement("li")
+    newItem.textContent = "新しいアイテム"
+    list.appendChild(newItem)
+})
+
+removeButton.addEventListener("click", (event) => {
+    list.removeChild(list.lastElementChild)
+})
