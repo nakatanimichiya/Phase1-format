@@ -1,25 +1,21 @@
-for (let i = 1; i < 21; i++) {
+let i = 0;
+
+const rewriteCntUp = function () {
+    const rewriteNum = document.getElementById("rewriteNum");
+    // for (let i = 1; i < 1000; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log("fizzbuzz");
+        rewriteNum.innerHTML = "fizzbuzz";
     } else if (i % 3 === 0) {
-        console.log("fizz");
+        rewriteNum.innerHTML = "fizz";
     } else if (i % 5 === 0) {
-        console.log("buzz");
+        rewriteNum.innerHTML = "buzz";
     } else {
-        console.log(i);
+        rewriteNum.innerHTML = i;
     }
-
-}
+    i += 1;
+    // }
+};
 
 const title = document.getElementById("title")
 console.log(`<h1>タグの中身のテキストは${title.textContent}です。`)
-
-const cntup = document.getElementsByClassName("cntup")
-
-cntup.addEventListener("click", (event) => {
-    const cntup = document.getElementsByClassName("cntup")
-    const number = document.createElement("p")
-    number.textContent = "新しいアイテム"
-    list.appendChild(number)
-})
