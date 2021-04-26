@@ -95,3 +95,16 @@ console.log(`<h1>タグの中身のテキストは${title.textContent}です`)�
 
 const list = document.querySelector(".list")
 console.log(`<ul>タグの2つ目の子要素のテキストは${list.children[1]}`)
+
+const newItem = document.createElement("li")
+newItem.textContent = "もも"
+list.appendChild(newItem)
+
+const button = document.getElementById("button")
+button.addEventListener("click", event => { //documentはページ全体　今回は削除ボタンだけ
+    confirm("削除してよろしいでしょうか？")
+})
+
+// button.addEventListener("click", () => {
+//     confirm("削除してよろしいでしょうか？")
+// })
