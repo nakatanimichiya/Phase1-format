@@ -8,6 +8,44 @@
 
 
 
+// const setBtn = function () {
+//     const num = Math.random() * 10;
+
+//     if (num < 5) {
+//         alert("ok");
+//     } else if (5 <= num) {
+//         alert("no");
+//     }
+
+// };
+// console.log(num)
+
+
+// //三項演算子
+// const setBtn = function () {
+//     const num = Math.random() * 10;
+//     num < 5 ? alert("pepe") : alert("dazo");
+// };
+
+const word1 = "bubu";
+const word2 = "pinpin";
+
 const setBtn = function () {
-    alert("ok");
-}
+    const num = Math.random() * 10;
+    if (num < 5) {
+        const result = window.confirm(word1);
+        if (result) { //result=ok
+            alert(word1);
+        } else {
+            alert(word2);
+        }
+
+    } else if (5 <= num) {
+        const result = window.confirm(word2);
+        if (result) {
+            alert(word2);
+        } else {
+            alert(word1);
+        }
+    }
+};

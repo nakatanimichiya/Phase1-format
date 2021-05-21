@@ -1,17 +1,25 @@
-img {
-  width: 150px;
-  height: 300px;
-}
 
-.img-wrap {
+
+#items {
   display: flex;
 }
 
+/* .img-wrap{
+  /* display: flex; */
+  /* flex-direction: column; */
+} */
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+
 /* チャレンジ問題 */
 
-/* p {
+p {
   text-align: center;
   font-weight: bold;
-} */
+}
 
 /* チャレンジ問題 ここまで */
